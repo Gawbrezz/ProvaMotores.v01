@@ -8,10 +8,16 @@ public class Player : MonoBehaviour
     public float forcaRolagem = 6f;
     public float tempoRolagem = 0.5f;
 
+    [Header("Wall Slide")]
+    public float velocidadeDeslize = -1.5f; // quão rápido desce na parede
+    public LayerMask camadaParede;
+    public float distanciaParede = 0.3f; // distância lateral para detectar parede
+
     private bool noChao = false;
     private bool andando = false;
     private bool rolando = false;
     private bool desequilibrado = false;
+    private bool wallSliding = false;
 
     private SpriteRenderer sprite;
     private Rigidbody2D rb;
@@ -19,9 +25,9 @@ public class Player : MonoBehaviour
 
     private float tempoRolagemAtual = 0f;
 
-    [Header("Configuração do Desequilíbrio (BoxCast)")]
-    public Vector2 tamanhoCaixa = new Vector2(0.6f, 0.1f); // largura e altura da caixa
-    public float distanciaCaixa = 0.1f; // quanto abaixo do pé do player a caixa fica
+    [Header("Desequilíbrio (BoxCast)")]
+    public Vector2 tamanhoCaixa = new Vector2(0.6f, 0.1f);
+    public float distanciaCaixa = 0.1f;
     public LayerMask camadaChao;
 
     void Start()
@@ -33,7 +39,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        // ----- Controle da Rolagem -----
+        // ----- Rolagem -----
         if (rolando)
         {
             tempoRolagemAtual -= Time.deltaTime;
@@ -45,7 +51,7 @@ public class Player : MonoBehaviour
 
         andando = false;
 
-        if (!rolando && !desequilibrado) // não anda se estiver rolando ou desequilibrado
+        if (!rolando && !desequilibrado && !wallSliding) // não anda se estiver em outros estados
         {
             if (Input.GetKey(KeyCode.A))
             {
@@ -75,32 +81,30 @@ public class Player : MonoBehaviour
             }
         }
 
-        // ----- Checagem do Desequilíbrio -----
+        // ----- Checar Desequilíbrio -----
         VerificarDesequilibrio();
+
+        // ----- Checar Wall Slide -----
+        VerificarWallSlide();
 
         // ----- Animator -----
         animator.SetBool("Andando", andando);
         animator.SetBool("Pulo", !noChao);
         animator.SetBool("Rolando", rolando);
         animator.SetBool("Desequilibrado", desequilibrado);
+        animator.SetBool("WallSlide", wallSliding);
     }
 
     void VerificarDesequilibrio()
     {
         if (noChao)
         {
-            // Centro da caixa logo abaixo do personagem
             Vector2 centro = (Vector2)transform.position + Vector2.down * distanciaCaixa;
-
-            // Faz o BoxCast parado (distância 0), só pra verificar colisão
             RaycastHit2D hit = Physics2D.BoxCast(centro, tamanhoCaixa, 0f, Vector2.down, 0f, camadaChao);
 
             if (hit.collider != null)
             {
-                // Pega a posição mais próxima do chão
                 float centroChao = hit.point.x;
-
-                // Se o centro do player está muito mais à esquerda/direita do ponto de contato
                 desequilibrado = Mathf.Abs(transform.position.x - centroChao) > (tamanhoCaixa.x * 0.25f);
             }
             else
@@ -111,6 +115,37 @@ public class Player : MonoBehaviour
         else
         {
             desequilibrado = false;
+        }
+    }
+
+    void VerificarWallSlide()
+    {
+        if (!noChao && rb.linearVelocity.y < 0) // só funciona no ar, descendo
+        {
+            // Raycast para detectar parede no lado que o sprite olha
+            Vector2 direcao = sprite.flipX ? Vector2.left : Vector2.right;
+            Vector2 origem = transform.position;
+
+            RaycastHit2D hit = Physics2D.Raycast(origem, direcao, distanciaParede, camadaParede);
+
+            if (hit.collider != null)
+            {
+                wallSliding = true;
+
+                // limita a velocidade de descida
+                if (rb.linearVelocity.y < velocidadeDeslize)
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, velocidadeDeslize);
+                }
+            }
+            else
+            {
+                wallSliding = false;
+            }
+        }
+        else
+        {
+            wallSliding = false;
         }
     }
 
@@ -130,11 +165,15 @@ public class Player : MonoBehaviour
         }
     }
 
-    // Gizmos para ver a caixa no editor
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
         Vector2 centro = (Vector2)transform.position + Vector2.down * distanciaCaixa;
         Gizmos.DrawWireCube(centro, tamanhoCaixa);
+
+        // Ray do wall slide
+        Gizmos.color = Color.blue;
+        Vector2 direcao = sprite != null && sprite.flipX ? Vector2.left : Vector2.right;
+        Gizmos.DrawLine(transform.position, (Vector2)transform.position + direcao * distanciaParede);
     }
 }

@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f370c709-49db-4ebe-93df-6683bd2c3234" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SunnyLand/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SunnyLand/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/WallGrab/wall-grab1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/WallGrab/wall-grab1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/WallGrab/wall-grab2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/WallGrab/wall-grab2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/idle/Foxy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/idle/Foxy.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Environments/SunnyLand/Layers/tileset.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Environments/SunnyLand/Layers/tileset.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
@@ -35,20 +29,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.42f1\Editor\Unity.exe" />
@@ -109,7 +103,8 @@
       <option name="presentableId" value="Default" />
       <updated>1755286602789</updated>
       <workItem from="1755286602792" duration="856000" />
-      <workItem from="1755363012798" duration="1500000" />
+      <workItem from="1755363012798" duration="1686000" />
+      <workItem from="1755378961065" duration="519000" />
     </task>
     <servers />
   </component>
