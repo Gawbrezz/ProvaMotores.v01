@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f370c709-49db-4ebe-93df-6683bd2c3234" name="Changes" comment="" />
+    <list default="true" id="f370c709-49db-4ebe-93df-6683bd2c3234" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SunnyLand/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SunnyLand/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Dizzy/Dizzy6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Characters/Players/Foxy/Sprites/Roll/Roll4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="31KxVrdohaxgJa9nYmCcJCq8exY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,6 +39,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,6 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1755286602789</updated>
       <workItem from="1755286602792" duration="856000" />
+      <workItem from="1755363012798" duration="1500000" />
     </task>
     <servers />
   </component>
