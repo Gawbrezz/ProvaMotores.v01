@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement; // necessário para reiniciar a cena
 
 public class Player : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class Player : MonoBehaviour
     public Vector2 tamanhoCaixa = new Vector2(0.6f, 0.1f);
     public float distanciaCaixa = 0.1f;
     public LayerMask camadaChao;
+
+    [Header("Limbo")]
+    public float limiteY = -10f; // altura mínima antes de morrer
 
     void Start()
     {
@@ -93,6 +97,12 @@ public class Player : MonoBehaviour
         animator.SetBool("Rolando", rolando);
         animator.SetBool("Desequilibrado", desequilibrado);
         animator.SetBool("WallSlide", wallSliding);
+
+        // ----- Checar Limbo -----
+        if (transform.position.y < limiteY)
+        {
+            Morrer();
+        }
     }
 
     void VerificarDesequilibrio()
@@ -149,6 +159,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    void Morrer()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     void OnCollisionEnter2D(Collision2D colisao)
     {
         if (colisao.gameObject.CompareTag("Chao"))
@@ -165,7 +180,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D colisao) // <-- adicionado do script novo
+    private void OnCollisionStay2D(Collision2D colisao)
     {
         if (colisao.gameObject.CompareTag("Chao"))
         {
