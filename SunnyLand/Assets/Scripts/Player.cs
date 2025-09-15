@@ -165,6 +165,14 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D colisao) // <-- adicionado do script novo
+    {
+        if (colisao.gameObject.CompareTag("Chao"))
+        {
+            noChao = true;
+        }
+    }
+
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
