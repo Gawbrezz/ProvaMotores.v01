@@ -1580,6 +1580,7 @@ GameObject:
   - component: {fileID: 1086135128}
   - component: {fileID: 1086135132}
   - component: {fileID: 1086135131}
+  - component: {fileID: 1086135133}
   m_Layer: 0
   m_Name: acorn-1_0
   m_TagString: Untagged
@@ -1673,7 +1674,7 @@ Transform:
   m_GameObject: {fileID: 1086135127}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 110.75, y: -3.1601, z: 0}
+  m_LocalPosition: {x: 110.77, y: -3.14, z: 0}
   m_LocalScale: {x: 1.6177, y: 1.3738, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1742,6 +1743,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1086135133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086135127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df28f9b59fff204b8bf95d8954f118e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fase2: fase2
 --- !u!1 &1269041384
 GameObject:
   m_ObjectHideFlags: 0
@@ -32464,7 +32478,7 @@ Transform:
   m_GameObject: {fileID: 1437846082}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.05, y: 2.73, z: 0}
+  m_LocalPosition: {x: -48.57, y: 3.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
