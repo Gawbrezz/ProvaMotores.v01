@@ -44,13 +44,13 @@ public class Inimigo : MonoBehaviour
                     if (player.transform.position.x > transform.position.x)
                     {
                         Pular(Vector2.right);
-                        spriteRenderer.flipX = false;
+                        spriteRenderer.flipX = true;
                     }
                     // Esquerda
                     else if (player.transform.position.x < transform.position.x)
                     {
                         Pular(Vector2.left);
-                        spriteRenderer.flipX = true;
+                        spriteRenderer.flipX = false;
                     }
                 }
 
